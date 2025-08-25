@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1172px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    background-color: #7AC751;
+    padding-top: 16px;
+}
+
+.header h4{
+    color: #fff;
+    font-weight: 300;
+    float: left;
+}
+
+.sign_up {
+    float: right;
+
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+.middle-span {
+    margin-left: 16px;
+    margin-right: 20px;
+}
