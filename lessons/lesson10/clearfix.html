@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            background-color: blueviolet;
+        }
+        .menu{
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+        .banner{
+            float: right;
+            width: 200px;
+            height: 300px;
+            background-color: rgb(202, 248, 50);
+        }
+        .content {
+             background-color: brown;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* .clear{
+            height: 10px;
+            background-color: black;
+            clear: both;
+        } */
+    </style>
+
+</head>
+<body>
+    <div>
+        ....
+    </div>
+
+    <ul>
+        
+    </ul>
+
+    <span>hello1</span>
+    <span>hello2</span>
+    <span>hello3</span>
+
+    <hr>
+
+    <div class="wrap clearfix">
+        <div class="menu"></div>
+        <div class="banner"></div>
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, harum praesentium veniam, consectetur amet dignissimos possimus sequi corporis soluta libero atque eos dolorem repellendus officiis est. Quis repudiandae nisi excepturi.
+        </div>
+    </div>
+    
+</body>
+</html>

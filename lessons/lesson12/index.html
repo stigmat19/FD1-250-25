@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 10000px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        Лучшие бренды<br> 
+        Mers<input type="checkbox" name="brand[]" value="Mers"> <br> 
+        BMW<input type="checkbox" name="brand[]" value="BMW" disabled> <br> 
+        Audi<input type="checkbox" name="brand[]" value="Audi"> <br> 
+        <input type="hidden" name="type" value="best">
+        <input type="submit">
+    </form>
+<hr>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        Худшие бренды<br> 
+        <input type="text" name="firstname" value="test" maxlength="10" placeholder="Hello"> <br>
+        <input type="password" name="password" autofocus> <br>
+        <label>
+            Mers<input type="checkbox" name="brand[]" value="Mers"> <br> 
+        </label>
+        <label>
+            BMW<input type="checkbox" name="brand[]" value="BMW"> <br> 
+        </label>
+        <label>
+            Audi<input type="checkbox" name="brand[]" value="Audi"> <br> 
+        </label>
+
+        <label for="test">Ferrari</label>
+        
+        <input type="hidden" name="type" value="bad">
+        <hr>
+        <input type="text" name="password"> <br>
+
+        <hr>
+        Mers<input type="radio" name="brand2" value="Mers"> <br> 
+        BMW<input type="radio" name="brand2" value="BMW"> <br> 
+        Audi<input type="radio" name="brand2" value="Audi"> <br> 
+
+        Zeekr<input type="radio" name="brand3" value="Zeekr"> <br> 
+        BYD<input type="radio" name="brand3" value="BYD"> <br> 
+        <input type="radio" name="brand3" id="test" value="Ferrari"> <br> 
+
+        <input type="file" name="file">
+
+        <textarea name="text"> Введите текст</textarea>
+
+        <select name="cars[]" size="3" multiple>
+            <optgroup label="germany">
+                <option value="Mers">Mers</option>
+                <option value="BMW" disabled>BMW</option>
+                <option value="Audi" selected>Audi</option>
+            </optgroup>
+            <optgroup label="china">
+                <option value="Zeekr">Zeekr</option>
+                <option value="BYD">BYD</option>
+            </optgroup>
+            <optgroup label="italy">
+                <option value="Ferrari">Ferrari</option>
+            </optgroup>
+            
+        </select>
+
+
+        <button type="submit">
+            <ul>
+                <li>test</li>
+                <li>test1</li>
+            </ul>
+        </button>
+    </form>
+</body>
+</html>
