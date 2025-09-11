@@ -1,0 +1,30 @@
+@media all and (max-width: 1420px) {
+    .container {
+        width: 900px;
+    }
+    .header > .container > ul {
+        width: 500px;
+    }
+    .contacts div {
+        margin-left: 10px;
+    }
+    h2 br {
+        display: none;
+    }
+    .autobuy ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .main img {
+        margin-top: 169px;
+        margin-left: -269px;
+    }
+}
+
+@media all and (max-width: 940px) {
+    .container {
+        width: 500px;
+    }
+}
