@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "mixins.scss";
+h1 {
+    color: $red;
+}
+
+p {
+    background-color: $yellow;
+    margin: {
+        left: $defaultSize * 2;
+        right: 50px;
+    }
+    background: {
+        color: $red;
+    }
+}
+
+.btn {
+    @include button;
+}
+
+.btn1 {
+    @include button($red, 30px)
+}
+
+@for $img from 1 through 100 {
+    .img#{$img} {
+        background: url("#{$img}.jpg");
+    }
+}
