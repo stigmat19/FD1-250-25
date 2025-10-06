@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(82, 82, 82);
+        }
+        
+        #app {
+            display: flex;
+            width: 900px;
+            margin: 0 auto;
+            gap: 10px;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<title>Document</title>
+</head>
+
+<body>
+
+    <div id="app"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        // falsy type: 0, null, '', undefined, NaN
+
+        // var age = 20;
+
+
+
+        // var age = parseInt(prompt());
+        // console.log(age + 10 + ' лет')
+
+        // if (age < 18) {
+        //     var test = "hello"
+        //     console.log(test);
+        // } else {
+        //     console.log('access cranted');
+        // }
+
+        // var isAdult;
+        var age = 20;
+        // if (age > 18) {
+        //     isAdult = true
+        // } else {
+        //     isAdult = false
+        // }
+
+        // var isAdult = age > 18 ? true : false
+
+
+        // var colorNumS = prompt('Введите номер цвета в радуге:');
+        // var colorNum = parseInt(colorNumS);
+        // var colorName;
+        // switch (colorNum) {
+        //     case 1:
+        //         colorName = 'красный';
+        //         break;
+        //     case 2:
+        //         colorName = 'оранжевый';
+        //         break;
+        //     case 3:
+        //         colorName = 'жёлтый';
+        //         break;
+        //     case 4:
+        //         colorName = 'зелёный';
+        //         break;
+        //     case 5:
+        //         colorName = 'голубой';
+        //         break;
+        //     case 6:
+        //         colorName = 'синий';
+        //         break;
+        //     case 7:
+        //         colorName = 'фиолетовый';
+        //         break;
+        // }
+
+        // console.log(colorName);
+
+        var app = document.getElementById('app');
+
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(json => {
+
+                console.log('----json', json)
+                var htmlTags = '';
+                var postNumber = 0;
+                while (postNumber < json.length) {
+                    htmlTags += `<div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${json[postNumber].title}</h5>
+                                        <p class="card-text">${json[postNumber].body}</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>`
+
+                    postNumber++;
+                }
+                app.innerHTML = htmlTags;
+                console.log('Всё, я большой!');
+            })
+
+
+
+        var a = 1
+        var b = 10
+        var b = 10
+        var b = 10
+        var b = 10
+        var b = 10
+        var b = 10
+        var b = 10
+        var a = "Hello"
+        while (a) {
+
+        }
+
+        if ()
+            switch () {}
+        while () {}
+        for () {}
+
+        for (var age = 1; age < 30; age++) {
+            console.log('Мне ' + age + ' лет');
+        }
+        console.log('Всё, я большой!');
+    </script>
+</body>
+
+</html>

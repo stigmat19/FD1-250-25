@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            color: red;
+            background-color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div id="hello">
+        <ul>
+            <li>
+                <a href="">hello</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        //   var user1 = ['Ivan', 25, 'M']
+        // var user2 = ['Petr', 30, 'M']
+        // var user3 = ['Dasha', 40, 'W']
+        // var user4 = [45, 'M', 'Oleg']
+
+        var a = 5;
+
+        var obj = {}
+        var obj1 = new Object();
+
+        var user1 = {
+            name: "Ivan",
+            age: 25,
+            gender: "M",
+        }
+
+        var user2 = {
+            age: 30,
+            name: "Petr",
+            gender: "M",
+        }
+
+        function getUserData(user) {
+            for (var key in user) {
+                console.log('key:' + key + ' - ' + "value: " + user[key]);
+            }
+            console.log('==========')
+        }
+        getUserData(user1)
+    </script>
+</body>
+
+</html>

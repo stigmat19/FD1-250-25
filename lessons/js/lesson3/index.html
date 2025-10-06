@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" onclick="test()" value="click">
+    <a href="tel:1212121"></a>
+
+    <script>
+        var a = 5;
+        var b = 10;
+
+        var c = 20;
+        var d = 30;
+
+        var aaa = 15;
+        var bbb = 25;
+
+        function test() {
+            alert("Hello")
+        }
+
+        function calc(number1, number2) {
+            console.log('+', number1 + number2)
+            console.log('/', number1 / number2)
+            console.log('-', number1 - number2)
+            console.log('*', number1 * number2)
+            console.log('===========')
+
+            return number1 + number2
+        }
+
+        // calc(a, b)
+        // calc(c, d)
+        // calc(aaa, bbb)
+
+        function getNumWord(num, word1, word2, word5) {
+            var dd = num % 100;
+            if ((dd >= 11) && (dd <= 19))
+                return word5;
+            var d = num % 10;
+            if (d == 1)
+                return word1;
+            if ((d >= 2) && (d <= 4))
+                return word2;
+            return word5;
+        }
+        var res = getNumWord(5, 'Груша', 'Груши', 'Груш')
+    </script>
+</body>
+
+</html>

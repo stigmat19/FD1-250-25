@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var arr = new Array(1, 2, 3, 4, 5)
+        var arr1 = [1, 2, 3, 4, 5]
+            // var user1 = ['Ivan', 25, 'M']
+            // var user2 = ['Petr', 30, 'M']
+            // var user3 = ['Dasha', 40, 'W']
+            // var user4 = [45, 'M', 'Oleg']
+
+        var users = [{
+            name: "Ivan",
+            age: 25,
+            gender: "M",
+        }, {
+            age: 30,
+            name: "Petr",
+            gender: "M",
+        }]
+
+        function getUserData(data) {
+            for (var i = 0; i < data.length; i++) {
+                for (var key in data[i]) {
+                    console.log('key:' + key + ' - ' + "value: " + data[i][key]);
+                }
+                console.log('==========')
+            }
+
+        }
+        getUserData(users)
+    </script>
+</body>
+
+</html>
