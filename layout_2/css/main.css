@@ -195,7 +195,7 @@
 }
 
 .second {
-    background-image: url(../img/main/_02D2094\ 1.png);
+    background-image: url(../img/main/bg111.png);
     background-repeat: no-repeat;
     width: 1170px;
     height: 838px;
@@ -542,7 +542,8 @@
     width: 1600px;
     height: 190px;
     background-color: black;
-    :hover{
+
+    :hover {
         color: #FBD13E;
     }
 }
